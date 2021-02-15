@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="shortcut icon" href="{% static 'image/favicon.jpg' %}" type="image/png">
-    <link rel="apple-touch-icon" href="{% static 'static_in_env\image\favicon.jpg' %}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'static_in_env\image\favicon.jpg' %}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'static_in_env\image\favicon.jpg' %}">
+    <link rel="apple-touch-icon" href="{% static 'image/favicon.jpg' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'image/favicon.jpg' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'image/favicon.jpg' %}">
     <link rel="pingback" href="https://livewp.site/wp/md/browcraft/xmlrpc.php">
 
     <title>Browcraft – Just another MS Sites site</title>
@@ -113,8 +113,8 @@
     </style>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="dns-prefetch" href="https://s.w.org/">
-    <script type="text/javascript" id="www-widgetapi-script" src="static_in_env\js\www-widgetapi.js" async=""></script>
-    <script src="{% static 'static_in_env\js\iframe_api' %}"></script>
+    <script type="text/javascript" id="www-widgetapi-script" src="{% static 'js/www-widgetapi.js' %}" async=""></script>
+    <script src="{% static 'js/iframe_api' %}"></script>
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
@@ -172,7 +172,7 @@
                     c(n.wpemoji)))
         }(window, document, window._wpemojiSettings);
     </script>
-    <script src="./Homepage_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+    <script src="{% static 'js/wp-emoji-release.min.js' %}" type="text/javascript" defer=""></script>
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -187,52 +187,55 @@
             padding: 0 !important;
         }
     </style>
-    <link rel="stylesheet" id="sb_instagram_styles-css" href="./Homepage_files/sbi-styles.min.css" type="text/css"
+    <link rel="stylesheet" id="sb_instagram_styles-css" href="{% static 'css/sbi-styles.min.css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="wp-block-library-css" href="./Homepage_files/style.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="wc-block-vendors-style-css" href="./Homepage_files/vendors-style.css" type="text/css"
+    <link rel="stylesheet" id="wp-block-library-css" href="{% static 'css/style.min.css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="wc-block-style-css" href="./Homepage_files/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="booked-icons-css" href="./Homepage_files/icons.css" type="text/css" media="all">
-    <link rel="stylesheet" id="booked-tooltipster-css" href="./Homepage_files/tooltipster.css" type="text/css"
+    <link rel="stylesheet" id="wc-block-vendors-style-css" href="{% static 'css/vendors-style.css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="booked-tooltipster-theme-css" href="./Homepage_files/tooltipster-light.css"
+    <link rel="stylesheet" id="wc-block-style-css" href="{% static 'css/style.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-icons-css" href="{% static 'css/icons.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-tooltipster-css" href="{% static 'css/tooltipster.css' %}" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="booked-tooltipster-theme-css" href="{% static 'css/tooltipster-light.css' %}"
         type="text/css" media="all">
-    <link rel="stylesheet" id="booked-animations-css" href="./Homepage_files/animations.css" type="text/css"
+    <link rel="stylesheet" id="booked-animations-css" href="{% static 'css/animations.css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="booked-css-css" href="./Homepage_files/booked.css" type="text/css" media="all">
-    <link rel="stylesheet" id="contact-form-7-css" href="./Homepage_files/styles.css" type="text/css" media="all">
-    <link rel="stylesheet" id="woocommerce-layout-css" href="./Homepage_files/woocommerce-layout.css" type="text/css"
+    <link rel="stylesheet" id="booked-css-css" href="{% static 'css/booked.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css" href="{% static 'css/styles.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="woocommerce-layout-css" href="{% static 'css/woocommerce-layout.css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="./Homepage_files/woocommerce-smallscreen.css"
+    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="{% static 'css/woocommerce-smallscreen.css' %}"
         type="text/css" media="only screen and (max-width: 768px)">
-    <link rel="stylesheet" id="woocommerce-general-css" href="./Homepage_files/woocommerce.css" type="text/css"
+    <link rel="stylesheet" id="woocommerce-general-css" href="{% static 'css/woocommerce.css' %}" type="text/css"
         media="all">
     <style id="woocommerce-inline-inline-css" type="text/css">
         .woocommerce form .form-row .required {
             visibility: visible;
         }
     </style>
-    <link rel="stylesheet" id="gt3_default_style-css" href="./Homepage_files/style(1).css" type="text/css" media="all">
-    <link rel="stylesheet" id="gt3_awesome-css" href="./Homepage_files/font-awesome.min.css" type="text/css"
+    <link rel="stylesheet" id="gt3_default_style-css" href="{% static 'css/style(1).css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="gt3_photo_modules-css" href="./Homepage_files/photo_modules.css" type="text/css"
+    <link rel="stylesheet" id="gt3_awesome-css" href="{% static 'css/font-awesome.min.css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="gt3_theme-css" href="./Homepage_files/theme.css" type="text/css" media="all">
-    <link rel="stylesheet" id="gt3_responsive-css" href="./Homepage_files/responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" id="gt3_custom-css" href="./Homepage_files/saved_resource" type="text/css" media="all">
-    <link rel="stylesheet" id="AllFonts-css" href="./Homepage_files/css" type="text/css" media="all">
-    <link rel="stylesheet" id="woocommerce-css" href="./Homepage_files/woocommerce(1).css" type="text/css" media="all">
-    <link rel="stylesheet" id="booked-wc-fe-styles-css" href="./Homepage_files/frontend-style.css" type="text/css"
+    <link rel="stylesheet" id="gt3_photo_modules-css" href="{% static 'css/photo_modules.css' %}" type="text/css"
         media="all">
-    <link rel="stylesheet" id="js_composer_front-css" href="./Homepage_files/js_composer.min.css" type="text/css"
+    <link rel="stylesheet" id="gt3_theme-css" href="{% static 'css/theme.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="gt3_responsive-css" href="{% static 'css/responsive.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="gt3_custom-css" href="{% static 'css/saved_resource' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="AllFonts-css" href="{% static 'css/css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="woocommerce-css" href="{% static 'css/woocommerce(1).css' %}" type="text/css"
         media="all">
-    <script type="text/javascript" src="./Homepage_files/jquery.min.js" id="jquery-core-js"></script>
-    <script type="text/javascript" src="./Homepage_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+    <link rel="stylesheet" id="booked-wc-fe-styles-css" href="{% static 'css/frontend-style.css' %}" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="js_composer_front-css" href="{% static 'css/js_composer.min.css' %}" type="text/css"
+        media="all">
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}" id="jquery-core-js"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-migrate.min.js' %}" id="jquery-migrate-js"></script>
     <script type="text/javascript" id="jquery-js-after">
         var gt3_ajaxurl = "https://livewp.site/wp/md/browcraft/wp-admin/admin-ajax.php";
     </script>
-    <script type="text/javascript" src="./Homepage_files/jquery.blockUI.min.js" id="jquery-blockui-js"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.blockUI.min.js' %}" id="jquery-blockui-js"></script>
     <script type="text/javascript" id="wc-add-to-cart-js-extra">
         /* <![CDATA[ */
         var wc_add_to_cart_params = {
@@ -245,10 +248,10 @@
         };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="./Homepage_files/add-to-cart.min.js" id="wc-add-to-cart-js"></script>
-    <script type="text/javascript" src="./Homepage_files/woocommerce-add-to-cart.js"
+    <script type="text/javascript" src="{% static 'js/add-to-cart.min.js' %}" id="wc-add-to-cart-js"></script>
+    <script type="text/javascript" src="{% static 'js/woocommerce-add-to-cart.js' %}"
         id="vc_woocommerce-add-to-cart-js-js"></script>
-    <script type="text/javascript" src="./Homepage_files/waypoint.js" id="gt3_waypoint_js-js"></script>
+    <script type="text/javascript" src="{% static 'js/waypoint.js' %}" id="gt3_waypoint_js-js"></script>
     <script type="text/javascript" id="booked-wc-fe-functions-js-extra">
         /* <![CDATA[ */
         var booked_wc_variables = {
@@ -263,15 +266,10 @@
         };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="./Homepage_files/frontend-functions.js" id="booked-wc-fe-functions-js"></script>
+    <script type="text/javascript" src="{% static 'js/frontend-functions.js' %}" id="booked-wc-fe-functions-js">
+    </script>
     <link rel="https://api.w.org/" href="https://livewp.site/wp/md/browcraft/wp-json/">
     <link rel="alternate" type="application/json" href="https://livewp.site/wp/md/browcraft/wp-json/wp/v2/pages/1137">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD"
-        href="https://livewp.site/wp/md/browcraft/xmlrpc.php?rsd">
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
-        href="https://livewp.site/wp/md/browcraft/wp-includes/wlwmanifest.xml">
-    <meta name="generator" content="WordPress 5.6.1">
-    <meta name="generator" content="WooCommerce 4.9.2">
     <link rel="canonical" href="https://livewp.site/wp/md/browcraft/">
     <link rel="shortlink" href="https://livewp.site/wp/md/browcraft/">
     <link rel="alternate" type="application/json+oembed"
@@ -475,7 +473,7 @@
         <div class="main_header_inner">
             <div class="logo">
                 <a href="https://livewp.site/wp/md/browcraft/" class="menu_logo">
-                    <img src="./Homepage_files/logo.png" alt="" width="129" height="65" class="logo_img">
+                    <img src="{% static 'image/logo.png' %}" alt="" width="129" height="65" class="logo_img">
                 </a>
             </div><!-- .logo -->
             <div class="btn_mobile_menu_wrapper">
