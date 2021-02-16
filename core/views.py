@@ -32,3 +32,10 @@ def single_product(request):
 def single_service(request):
     context = {}
     return render(request, "single-service.html", context)
+
+
+def shop(request):
+    context = {
+        'items': Item.objects.all()
+    }
+    return render(request, "shop.html", context)
