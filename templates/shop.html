@@ -14,7 +14,10 @@
   <link rel="apple-touch-icon" sizes="72x72" href="{% static 'image/favicon.jpg' %}">
   <link rel="apple-touch-icon" sizes="114x114" href="{% static 'image/favicon.jpg' %}">
   <link rel="pingback" href="https://livewp.site/wp/md/browcraft/xmlrpc.php">
+  <script src="https://use.fontawesome.com/ab5c0805db.js"></script>
+
   <title>Eyeshadow-primer – Browcraft</title>
+
   <style type="text/css" media="screen">
     #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active,
     #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active:hover,
@@ -118,7 +121,7 @@
     href="https://livewp.site/wp/md/browcraft/comments/feed/">
   <link rel="alternate" type="application/rss+xml" title="Browcraft » Eyeshadow-primer Comments Feed"
     href="https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/feed/">
-  <script src="./shop_files/iframe_api"></script>
+  <script src="{% static 'js/iframe_api' %}"></script>
   <script type="text/javascript">
     window._wpemojiSettings = {
       "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
@@ -176,7 +179,7 @@
           .wpemoji)))
     }(window, document, window._wpemojiSettings);
   </script>
-  <script src="./shop_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+  <script src="{% static 'js/wp-emoji-release.min.js' %}" type="text/javascript" defer=""></script>
   <style type="text/css">
     img.wp-smiley,
     img.emoji {
@@ -191,53 +194,58 @@
       padding: 0 !important;
     }
   </style>
-  <link rel="stylesheet" id="sb_instagram_styles-css" href="./shop_files/sbi-styles.min.css" type="text/css"
+  <link rel="stylesheet" id="sb_instagram_styles-css" href="{% static 'css/sbi-styles.min.css' %}" type="text/css"
     media="all">
-  <link rel="stylesheet" id="wp-block-library-css" href="./shop_files/style.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="wc-block-vendors-style-css" href="./shop_files/vendors-style.css" type="text/css"
+  <link rel="stylesheet" id="wp-block-library-css" href="{% static 'css/style.min.css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="wc-block-vendors-style-css" href="{% static 'css/vendors-style.css' %}" type="text/css"
     media="all">
-  <link rel="stylesheet" id="wc-block-style-css" href="./shop_files/style.css" type="text/css" media="all">
-  <link rel="stylesheet" id="booked-icons-css" href="./shop_files/icons.css" type="text/css" media="all">
-  <link rel="stylesheet" id="booked-tooltipster-css" href="./shop_files/tooltipster.css" type="text/css" media="all">
-  <link rel="stylesheet" id="booked-tooltipster-theme-css" href="./shop_files/tooltipster-light.css" type="text/css"
+  <link rel="stylesheet" id="wc-block-style-css" href="{% static 'css/style.css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="booked-icons-css" href="{% static 'css/icons.css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="booked-tooltipster-css" href="{% static 'css/tooltipster.css' %}" type="text/css"
     media="all">
-  <link rel="stylesheet" id="booked-animations-css" href="./shop_files/animations.css" type="text/css" media="all">
-  <link rel="stylesheet" id="booked-css-css" href="./shop_files/booked.css" type="text/css" media="all">
-  <link rel="stylesheet" id="contact-form-7-css" href="./shop_files/styles.css" type="text/css" media="all">
+  <link rel="stylesheet" id="booked-tooltipster-theme-css" href="{% static 'css/tooltipster-light.css' %}"
+    type="text/css" media="all">
+  <link rel="stylesheet" id="booked-animations-css" href="{% static 'css/animations.css' %}" type="text/css"
+    media="all">
+  <link rel="stylesheet" id="booked-css-css" href="{% static 'css/booked.css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="contact-form-7-css" href="{% static 'css/styles.css' %}" type="text/css" media="all">
   <link rel="stylesheet" id="photoswipe-css"
     href="https://livewp.site/wp/md/browcraft/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=4.9.2"
     type="text/css" media="all">
   <link rel="stylesheet" id="photoswipe-default-skin-css"
     href="https://livewp.site/wp/md/browcraft/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=4.9.2"
     type="text/css" media="all">
-  <link rel="stylesheet" id="woocommerce-layout-css" href="./shop_files/woocommerce-layout.css" type="text/css"
+  <link rel="stylesheet" id="woocommerce-layout-css" href="{% static 'css/woocommerce-layout.css' %}" type="text/css"
     media="all">
-  <link rel="stylesheet" id="woocommerce-smallscreen-css" href="./shop_files/woocommerce-smallscreen.css"
+  <link rel="stylesheet" id="woocommerce-smallscreen-css" href="{% static 'css/woocommerce-smallscreen.css' %}"
     type="text/css" media="only screen and (max-width: 768px)">
-  <link rel="stylesheet" id="woocommerce-general-css" href="./shop_files/woocommerce.css" type="text/css" media="all">
+  <link rel="stylesheet" id="woocommerce-general-css" href="{% static 'css/woocommerce.css' %}" type="text/css"
+    media="all">
   <style id="woocommerce-inline-inline-css" type="text/css">
     .woocommerce form .form-row .required {
       visibility: visible;
     }
   </style>
-  <link rel="stylesheet" id="gt3_default_style-css" href="./shop_files/style(1).css" type="text/css" media="all">
-  <link rel="stylesheet" id="gt3_awesome-css" href="./shop_files/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="gt3_photo_modules-css" href="./shop_files/photo_modules.css" type="text/css" media="all">
-  <link rel="stylesheet" id="gt3_theme-css" href="./shop_files/theme.css" type="text/css" media="all">
-  <link rel="stylesheet" id="gt3_responsive-css" href="./shop_files/responsive.css" type="text/css" media="all">
-  <link rel="stylesheet" id="gt3_custom-css" href="./shop_files/saved_resource" type="text/css" media="all">
+  <link rel="stylesheet" id="gt3_default_style-css" href="{% static 'css/style(1).css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="gt3_awesome-css" href="{% static 'css/font-awesome.min.css' %}" type="text/css"
+    media="all">
+  <link rel="stylesheet" id="gt3_photo_modules-css" href="{% static 'css/photo_modules.css' %}" type="text/css"
+    media="all">
+  <link rel="stylesheet" id="gt3_theme-css" href="{% static 'css/theme.css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="gt3_responsive-css" href="{% static 'css/responsive.css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="gt3_custom-css" href="{% static 'css/saved_resource' %}" type="text/css" media="all">
   <link rel="stylesheet" id="AllFonts-css"
     href="https://fonts.googleapis.com/css?family=Lato%3A100%2C200%2C300%2C300italic%2C400%2C400italic%2C700%2C800%2C900%7CPlayfair+Display%3A300%2C500%2C700%2C800%2C900%7CPlayfair+Display%3A400%2C500%2C700%2C800%2C900%7CDamion&amp;ver=5.6.1"
     type="text/css" media="all">
-  <link rel="stylesheet" id="woocommerce-css" href="./shop_files/woocommerce(1).css" type="text/css" media="all">
-  <link rel="stylesheet" id="booked-wc-fe-styles-css" href="./shop_files/frontend-style.css" type="text/css"
+  <link rel="stylesheet" id="woocommerce-css" href="{% static 'css/woocommerce(1).css' %}" type="text/css" media="all">
+  <link rel="stylesheet" id="booked-wc-fe-styles-css" href="{% static 'css/frontend-style.css' %}" type="text/css"
     media="all">
-  <script type="text/javascript" src="./shop_files/jquery.min.js" id="jquery-core-js"></script>
-  <script type="text/javascript" src="./shop_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.min.js' %}" id="jquery-core-js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery-migrate.min.js' %}" id="jquery-migrate-js"></script>
   <script type="text/javascript" id="jquery-js-after">
     var gt3_ajaxurl = "https://livewp.site/wp/md/browcraft/wp-admin/admin-ajax.php";
   </script>
-  <script type="text/javascript" src="./shop_files/jquery.blockUI.min.js" id="jquery-blockui-js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.blockUI.min.js' %}" id="jquery-blockui-js"></script>
   <script type="text/javascript" id="wc-add-to-cart-js-extra">
     /* <![CDATA[ */
     var wc_add_to_cart_params = {
@@ -250,10 +258,11 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/add-to-cart.min.js" id="wc-add-to-cart-js"></script>
-  <script type="text/javascript" src="./shop_files/woocommerce-add-to-cart.js" id="vc_woocommerce-add-to-cart-js-js">
+  <script type="text/javascript" src="{% static 'js/add-to-cart.min.js' %}" id="wc-add-to-cart-js"></script>
+  <script type="text/javascript" src="{% static 'js/woocommerce-add-to-cart.js' %}"
+    id="vc_woocommerce-add-to-cart-js-js">
   </script>
-  <script type="text/javascript" src="./shop_files/waypoint.js" id="gt3_waypoint_js-js"></script>
+  <script type="text/javascript" src="{% static 'js/waypoint.js' %}" id="gt3_waypoint_js-js"></script>
   <script type="text/javascript" id="booked-wc-fe-functions-js-extra">
     /* <![CDATA[ */
     var booked_wc_variables = {
@@ -268,7 +277,7 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/frontend-functions.js" id="booked-wc-fe-functions-js"></script>
+  <script type="text/javascript" src="{% static 'js/frontend-functions.js' %}" id="booked-wc-fe-functions-js"></script>
   <link rel="https://api.w.org/" href="https://livewp.site/wp/md/browcraft/wp-json/">
   <link rel="alternate" type="application/json" href="https://livewp.site/wp/md/browcraft/wp-json/wp/v2/product/2714">
   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://livewp.site/wp/md/browcraft/xmlrpc.php?rsd">
@@ -329,7 +338,7 @@
     <div class="main_header_inner">
       <div class="logo">
         <a href="https://livewp.site/wp/md/browcraft/" class="menu_logo">
-          <img src="./shop_files/logo.png" alt="" width="129" height="65" class="logo_img">
+          <img src="{% static 'image/logo.png' %}" alt="" width="129" height="65" class="logo_img">
         </a>
       </div><!-- .logo -->
       <div class="btn_mobile_menu_wrapper">
@@ -467,7 +476,7 @@
         <div class="aside_menu_block_top_inner">
           <div class="logo">
             <a href="https://livewp.site/wp/md/browcraft/" class="menu_logo">
-              <img src="./shop_files/logo.png" alt="" width="129" height="65" class="logo_img">
+              <img src="{% static 'image/logo.png' %}" alt="" width="129" height="65" class="logo_img">
             </a>
           </div><!-- .logo -->
           <div class="aside_search_wrapper">
@@ -758,7 +767,7 @@
                               class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                               <span class="onsale">Sale!</span>
                               <img width="300" height="300"
-                                src="./shop_files/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-300x300.jpg"
+                                src="{% static 'image/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-300x300.jpg' %}"
                                 class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
                                 loading="lazy"
                                 srcset="https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-300x300.jpg 300w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-150x150.jpg 150w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-768x768.jpg 768w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-1024x1024.jpg 1024w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-600x600.jpg 600w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-250x250.jpg 250w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black.jpg 1170w"
@@ -809,7 +818,7 @@
           <div class="widget_text vc_column_container vc_col-sm-6 vc_col-md-3">
             <div class="widget_text vc_column-inner sidepanel widget_custom_html">
               <div class="textwidget custom-html-widget"><a href="https://livewp.site/wp/md/browcraft"><img width="129"
-                    height="65" src="./shop_files/logo.png" alt="" style="max-width: 100%;height: auto">
+                    height="65" src="{% static 'image/logo.png' %}" alt="" style="max-width: 100%;height: auto">
                 </a>
                 <div>Browcraft Studio is a full-service skin care studio specializing in eyebrow design (including
                   microblading) and premium skincare</div>
@@ -1508,8 +1517,8 @@
       document.body.className = c;
     })()
   </script>
-  <script type="text/javascript" src="./shop_files/core.min.js" id="jquery-ui-core-js"></script>
-  <script type="text/javascript" src="./shop_files/datepicker.min.js" id="jquery-ui-datepicker-js"></script>
+  <script type="text/javascript" src="{% static 'js/core.min.js' %}" id="jquery-ui-core-js"></script>
+  <script type="text/javascript" src="{% static 'js/datepicker.min.js' %}" id="jquery-ui-datepicker-js"></script>
   <script type="text/javascript" id="jquery-ui-datepicker-js-after">
     jQuery(document).ready(function (jQuery) {
       jQuery.datepicker.setDefaults({
@@ -1530,9 +1539,9 @@
       });
     });
   </script>
-  <script type="text/javascript" src="./shop_files/spin.min.js" id="booked-spin-js-js"></script>
-  <script type="text/javascript" src="./shop_files/spin.jquery.js" id="booked-spin-jquery-js"></script>
-  <script type="text/javascript" src="./shop_files/jquery.tooltipster.min.js" id="booked-tooltipster-js"></script>
+  <script type="text/javascript" src="{% static 'js/spin.min.js' %}" id="booked-spin-js-js"></script>
+  <script type="text/javascript" src="{% static 'js/spin.jquery.js' %}" id="booked-spin-jquery-js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.tooltipster.min.js' %}" id="booked-tooltipster-js"></script>
   <script type="text/javascript" id="booked-functions-js-extra">
     /* <![CDATA[ */
     var booked_js_vars = {
@@ -1551,7 +1560,7 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/functions.js" id="booked-functions-js"></script>
+  <script type="text/javascript" src="{% static 'js/functions.js' %}" id="booked-functions-js"></script>
   <script type="text/javascript" id="contact-form-7-js-extra">
     /* <![CDATA[ */
     var wpcf7 = {
@@ -1562,7 +1571,7 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/scripts.js" id="contact-form-7-js"></script>
+  <script type="text/javascript" src="{% static 'js/scripts.js' %}" id="contact-form-7-js"></script>
   <script type="text/javascript"
     src="https://livewp.site/wp/md/browcraft/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21"
     id="zoom-js"></script>
@@ -1608,7 +1617,7 @@
   <script type="text/javascript"
     src="https://livewp.site/wp/md/browcraft/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=4.9.2"
     id="wc-single-product-js"></script>
-  <script type="text/javascript" src="./shop_files/js.cookie.min.js" id="js-cookie-js"></script>
+  <script type="text/javascript" src="{% static 'js/js.cookie.min.js' %}" id="js-cookie-js"></script>
   <script type="text/javascript" id="woocommerce-js-extra">
     /* <![CDATA[ */
     var woocommerce_params = {
@@ -1617,7 +1626,7 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/woocommerce.min.js" id="woocommerce-js"></script>
+  <script type="text/javascript" src="{% static 'js/woocommerce.min.js' %}" id="woocommerce-js"></script>
   <script type="text/javascript" id="wc-cart-fragments-js-extra">
     /* <![CDATA[ */
     var wc_cart_fragments_params = {
@@ -1629,7 +1638,7 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/cart-fragments.min.js" id="wc-cart-fragments-js"></script>
+  <script type="text/javascript" src="{% static 'js/cart-fragments.min.js' %}" id="wc-cart-fragments-js"></script>
   <script type="text/javascript" id="booked-fea-js-js-extra">
     /* <![CDATA[ */
     var booked_fea_vars = {
@@ -1639,14 +1648,14 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/functions(1).js" id="booked-fea-js-js"></script>
-  <script type="text/javascript" src="./shop_files/jquery.swipebox.js" id="swipebox-js"></script>
-  <script type="text/javascript" src="./shop_files/jquery.isotope.min.js" id="gt3_isotope-js"></script>
-  <script type="text/javascript" src="./shop_files/imagesloaded.min.js" id="imagesloaded-js"></script>
-  <script type="text/javascript" src="./shop_files/jquery.mousewheel.js" id="gt3_mousewheel_js-js"></script>
-  <script type="text/javascript" src="./shop_files/theme.js" id="gt3_theme_js-js"></script>
-  <script type="text/javascript" src="./shop_files/theme-woo.js" id="gt3-main-woo-js"></script>
-  <script type="text/javascript" src="./shop_files/wp-embed.min.js" id="wp-embed-js"></script>
+  <script type="text/javascript" src="{% static 'js/functions(1).js' %}" id="booked-fea-js-js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.swipebox.js' %}" id="swipebox-js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.isotope.min.js' %}" id="gt3_isotope-js"></script>
+  <script type="text/javascript" src="{% static 'js/imagesloaded.min.js' %}" id="imagesloaded-js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.mousewheel.js' %}" id="gt3_mousewheel_js-js"></script>
+  <script type="text/javascript" src="{% static 'js/theme.js' %}" id="gt3_theme_js-js"></script>
+  <script type="text/javascript" src="{% static 'js/theme-woo.js' %}" id="gt3-main-woo-js"></script>
+  <script type="text/javascript" src="{% static 'js/wp-embed.min.js' %}" id="wp-embed-js"></script>
   <script type="text/javascript" id="sb_instagram_scripts-js-extra">
     /* <![CDATA[ */
     var sb_instagram_js_options = {
@@ -1656,7 +1665,7 @@
     };
     /* ]]> */
   </script>
-  <script type="text/javascript" src="./shop_files/sbi-scripts.min.js" id="sb_instagram_scripts-js"></script>
+  <script type="text/javascript" src="{% static 'js/sbi-scripts.min.js' %}" id="sb_instagram_scripts-js"></script>
 
 </body>
 

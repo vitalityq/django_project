@@ -11,7 +11,7 @@ def item_list(request):
 
 def about_us(request):
     context = {}
-    return render(request, "about-us.html", context)
+    return render(request, "about_us.html", context)
 
 
 def appointment(request):
