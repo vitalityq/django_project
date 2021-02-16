@@ -7,3 +7,8 @@ def item_list(request):
         'items': Item.objects.all()
     }
     return render(request, "home.html", context)
+
+
+def services(request):
+    context = {}
+    return render(request, "services.html", context)
