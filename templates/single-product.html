@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <!-- saved from url=(0061)https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/ -->
 <html lang="en-US" class="with_aside_header">
@@ -726,19 +728,19 @@
                         data-columns="4" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;"><a
                           href="javascript:void(0)" class="woocommerce-product-gallery__trigger">🔍</a>
                         <figure class="woocommerce-product-gallery__wrapper">
-                          <div
-                            data-thumb="https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer-250x250.jpg"
-                            data-thumb-alt="" class="woocommerce-product-gallery__image"
-                            style="position: relative; overflow: hidden;"><a
+                          <div data-thumb="{% static 'image/eyeshadow-primer-250x250.jpg' %}" data-thumb-alt=""
+                            class="woocommerce-product-gallery__image" style="position: relative; overflow: hidden;"><a
                               href="{% static 'css/eyeshadow-primer.jpg"><img width="600" height="600' %}" type
                               src="{% static 'image/eyeshadow-primer-600x600.jpg' %}" class="wp-post-image" alt=""
                               loading="lazy" title="eyeshadow-primer" data-caption=""
-                              data-src="https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer.jpg"
-                              data-large_image="https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer.jpg"
+                              data-src="{% static 'image/eyeshadow-primer.jpg' %}"
+                              data-large_image="{% static 'image/eyeshadow-primer1170x1170.jpg' %}"
                               data-large_image_width="1170" data-large_image_height="1170"
                               srcset="https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer-600x600.jpg 600w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer-150x150.jpg 150w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer-300x300.jpg 300w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer-768x768.jpg 768w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer-1024x1024.jpg 1024w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer-250x250.jpg 250w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/eyeshadow-primer.jpg 1170w"
-                              sizes="(max-width: 600px) 100vw, 600px"></a><img role="presentation" alt=""
-                              src="{% static 'image/eyeshadow-primer.jpg' %}" class="zoomImg"
+                              sizes="(max-width: 600px) 100vw, 600px"></a>
+
+                            <img role="presentation" alt="" src="{% static 'image/eyeshadow-primer.jpg' %}"
+                              class="zoomImg"
                               style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1170px; height: 1170px; border: none; max-width: none; max-height: none;">
                           </div>
                         </figure>
@@ -1668,8 +1670,8 @@
   <script type="text/javascript" src="{% static 'js/jquery.zoom.min.js' %}" id="zoom-js"></script>
   <script type="text/javascript" src="{% static 'js/jquery.flexslider-min.js' %}" id="flexslider-js"></script>
   <script type="text/javascript" src="{% static 'js/photoswipe.min.js' %}" id="photoswipe-js"></script>
-  <script type="text/javascript" src="{% static 'js/photoswipe-ui-default.min.js' %}"
-    id="photoswipe-ui-default-js"></script>
+  <script type="text/javascript" src="{% static 'js/photoswipe-ui-default.min.js' %}" id="photoswipe-ui-default-js">
+  </script>
   <script type="text/javascript" id="wc-single-product-js-extra">
     /* <![CDATA[ */
     var wc_single_product_params = {
