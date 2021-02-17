@@ -26,6 +26,10 @@ class Item(models.Model):
     price = models.FloatField()
     category = models.CharField(choices=CATEGORY_CHOICES, max_length=2)
     label = models.CharField(choices=LABEL_CHOICES, max_length=1)
+    description = models.TextField(verbose_name='Description', null=True)
+    description_bottom = models.TextField(
+        verbose_name='Description_bottom', null=True)
+    reviews = models.TextField(verbose_name='Reviews', null=True)
 
     def __str__(self):
         return self.title
