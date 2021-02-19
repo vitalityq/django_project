@@ -1,15 +1,15 @@
 from django.urls import path
 from . import views
 from .views import (
-    item_list,
-    ShopView
+    ShopView,
+    HomeView
 )
 
 
 app_name = 'core'
 
 urlpatterns = [
-    path('', item_list, name='item-list'),
+    path('', HomeView.as_view(), name='home'),
     path('services/', views.services, name="services"),
     path('about_us/', views.about_us, name="about_us"),
     path('appointment/', views.appointment, name="appointment"),

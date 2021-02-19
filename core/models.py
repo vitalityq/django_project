@@ -30,6 +30,7 @@ class Item(models.Model):
     description_bottom = models.TextField(
         verbose_name='Description_bottom', null=True)
     reviews = models.TextField(verbose_name='Reviews', null=True)
+    image = models.ImageField()
 
     def __str__(self):
         return self.title
@@ -52,3 +53,19 @@ class Order(models.Model):
 
     def __str__(self):
         return self.user.username
+
+
+POSITION_CHOICE = (
+    ('client', 'client'),
+    ('beauty expert', 'beauty expert')
+)
+
+
+class Testimonial(models.Model):
+    image = models.ImageField()
+    name = models.CharField(max_length=50)
+    position = models.CharField(choices=POSITION_CHOICE, max_length=50)
+    comment = models.TextField(max_length=2000)
+
+    def __str__(self):
+        return self.name

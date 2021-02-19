@@ -120,6 +120,7 @@
 
   <link rel="stylesheet" id="sb_instagram_styles-css" href="{% static 'css/sbi-styles.min.css' %}" type="text/css"
     media="all">
+  <link rel="stylesheet" id="" href="{% static 'css/tab.css' %}" type="text/css" media="all">
   <link rel="stylesheet" id="" href="{% static 'css/style2.css' %}" type="text/css" media="all">
   <link rel="stylesheet" id="wp-block-library-css" href="{% static 'css/style.min.css' %}" type="text/css" media="all">
   <link rel="stylesheet" id="wc-block-vendors-style-css" href="{% static 'css/vendors-style.css' %}" type="text/css"
@@ -438,12 +439,12 @@
 
                       <div
                         class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images">
-                        <img src="{% static 'image/eyeshadow-primer-600x600.jpg' %}" alt="eyeshadow-primer" width="600"
-                          height="600">
+                        {% for item in object_list %}
+                        <img src="{{ item.image.url }}" alt="eyeshadow-primer" width="600" height="600">
                       </div>
 
                       <div class="summary entry-summary">
-                        {% for item in object_list %}
+
                         <h1 class="product_title entry-title">{{ item.title }}</h1>
                         <p class="price">
                           <strong>$
@@ -473,122 +474,128 @@
                         <div class="product_meta">
                           <span class="posted_in">Category: <a>{{ item.get_category_display }}</a></span>
                         </div>
-                        {% endfor %}
+
+                      </div>
+                      <p></p>
+
+                      <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')"
+                          id="defaultOpen">Description</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Reviews</button>
                       </div>
 
+                      <div id="London" class="tabcontent">
 
-                      <div class="woocommerce-tabs wc-tabs-wrapper">
-                        <ul class="tabs wc-tabs" role="tablist">
-                          <li class="description_tab" id="tab-title-description" role="tab"
-                            aria-controls="tab-description">
-                            <a href="https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/#tab-description">
-                              Description </a>
-                          </li>
-                          <li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
-                            <a href="https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/#tab-reviews">
-                              Reviews (0) </a>
-                          </li>
-                        </ul>
-                        <div
-                          class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab"
-                          id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+                        <p>{{ item.description_bottom }}</p>
+                      </div>
 
-                          <h2>Description</h2>
+                      <div id="Paris" class="tabcontent">
 
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida erat sed accumsan
-                            auctor. Phasellus accumsan augue sed mi porta semper. Phasellus nulla massa, volutpat a
-                            turpis at, molestie laoreet quam. Maecenas facilisis sit amet arcu scelerisque varius.
-                            Maecenas consectetur lorem et ipsum tincidunt vehicula sed in nulla. Etiam id sem in lectus
-                            bibendum mattis ut non urna. Sed et enim ligula. Etiam at hendrerit justo, non ullamcorper
-                            justo.</p>
-                          <p>Nulla venenatis massa erat, ac dignissim nisl pulvinar quis. Aliquam euismod quis justo in
-                            auctor. Pellentesque lacus lorem, hendrerit nec elementum ac, varius non nunc. Pellentesque
-                            ut ultricies diam.</p>
-                        </div>
-                        <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab"
-                          id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
-                          <div id="reviews" class="woocommerce-Reviews">
-                            <div id="comments">
-                              <h2 class="woocommerce-Reviews-title">
-                                Reviews </h2>
+                        <p>{{ item.reviews }}</p>
+                      </div>
+                      {% endfor %}
+                      <script>
+                        function openCity(evt, cityName) {
+                          var i, tabcontent, tablinks;
+                          tabcontent = document.getElementsByClassName("tabcontent");
+                          for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                          }
+                          tablinks = document.getElementsByClassName("tablinks");
+                          for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                          }
+                          document.getElementById(cityName).style.display = "block";
+                          evt.currentTarget.className += " active";
+                        }
 
-                              <p class="woocommerce-noreviews">There are no reviews yet.</p>
-                            </div>
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                      </script>
 
-                            <div id="review_form_wrapper">
-                              <div id="review_form">
-                                <div id="respond" class="comment-respond">
-                                  <span id="reply-title" class="comment-reply-title">Be the first to review
-                                    “Eyeshadow-primer” <small><a rel="nofollow" id="cancel-comment-reply-link"
-                                        href="https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/#respond"
-                                        style="display:none;">Cancel reply</a></small></span>
-                                  <p class="must-log-in">You must be <a
-                                      href="https://livewp.site/wp/md/browcraft/my-account/">logged in</a> to post a
-                                    review.</p>
-                                </div><!-- #respond -->
+                      <!---<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab"
+                        id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+                        <div id="reviews" class="woocommerce-Reviews">
+                          <div id="comments">
+                            <h2 class="woocommerce-Reviews-title">
+                              Reviews </h2>
+
+                            <p class="woocommerce-noreviews">There are no reviews yet.</p>
+                          </div>
+
+                          <div id="review_form_wrapper">
+                            <div id="review_form">
+                              <div id="respond" class="comment-respond">
+                                <span id="reply-title" class="comment-reply-title">Be the first to review
+                                  “Eyeshadow-primer” <small><a rel="nofollow" id="cancel-comment-reply-link"
+                                      href="https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/#respond"
+                                      style="display:none;">Cancel reply</a></small></span>
+                                <p class="must-log-in">You must be <a
+                                    href="https://livewp.site/wp/md/browcraft/my-account/">logged in</a> to post a
+                                  review.</p>
                               </div>
                             </div>
+                          </div>-->
 
-                            <div class="clear"></div>
-                          </div>
-                        </div>
-
-                      </div>
-
-
-                      <section class="related products">
-
-                        <h2>Related products</h2>
-
-                        <ul class="products columns-3">
-
-
-                          <li
-                            class="product type-product post-2719 status-publish first instock product_cat-complete-concealer product_cat-eyeshadow-primer has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
-                            <a href="https://livewp.site/wp/md/browcraft/product/nars-larger-than-life-lengthening-mascara-in-black/"
-                              class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                              <span class="onsale">Sale!</span>
-                              <img width="300" height="300"
-                                src="{% static 'image/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-300x300.jpg' %}"
-                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                loading="lazy"
-                                srcset="https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-300x300.jpg 300w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-150x150.jpg 150w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-768x768.jpg 768w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-1024x1024.jpg 1024w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-600x600.jpg 600w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-250x250.jpg 250w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black.jpg 1170w"
-                                sizes="(max-width: 300px) 100vw, 300px"></a><a
-                              href="https://livewp.site/wp/md/browcraft/product/nars-larger-than-life-lengthening-mascara-in-black/"
-                              class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                              <h2 class="woocommerce-loop-product__title">Nars Larger Than Life Lengthening Mascara in
-                                Black</h2>
-                            </a>
-                            <span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span
-                                      class="woocommerce-Price-currencySymbol">$</span>129.00</bdi></span></del>
-                              <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                      class="woocommerce-Price-currencySymbol">$</span>89.99</bdi></span></ins></span>
-                            <div class="gt3_woocommerce_open_control_tag"><a
-                                href="https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/?add-to-cart=2719"
-                                data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                data-product_id="2719" data-product_sku=""
-                                aria-label="Add “Nars Larger Than Life Lengthening Mascara in Black” to your cart"
-                                rel="nofollow">Add to cart</a></div>
-                          </li>
-
-
-                        </ul>
-
-                      </section>
+                      <div class="clear"></div>
                     </div>
-
-
-
                   </div>
-                  <div class="clear"></div>
+
                 </div>
+
+
+                <section class="related products">
+
+                  <h2>Related products</h2>
+
+                  <ul class="products columns-3">
+
+
+                    <li
+                      class="product type-product post-2719 status-publish first instock product_cat-complete-concealer product_cat-eyeshadow-primer has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                      <a href="https://livewp.site/wp/md/browcraft/product/nars-larger-than-life-lengthening-mascara-in-black/"
+                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                        <span class="onsale">Sale!</span>
+                        <img width="300" height="300"
+                          src="{% static 'image/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-300x300.jpg' %}"
+                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"
+                          srcset="https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-300x300.jpg 300w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-150x150.jpg 150w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-768x768.jpg 768w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-1024x1024.jpg 1024w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-600x600.jpg 600w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black-250x250.jpg 250w, https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2019/07/Nars-Larger-Than-Life-Lengthening-Mascara-in-Black.jpg 1170w"
+                          sizes="(max-width: 300px) 100vw, 300px"></a><a
+                        href="https://livewp.site/wp/md/browcraft/product/nars-larger-than-life-lengthening-mascara-in-black/"
+                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                        <h2 class="woocommerce-loop-product__title">Nars Larger Than Life Lengthening Mascara in
+                          Black</h2>
+                      </a>
+                      <span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span
+                                class="woocommerce-Price-currencySymbol">$</span>129.00</bdi></span></del>
+                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                class="woocommerce-Price-currencySymbol">$</span>89.99</bdi></span></ins></span>
+                      <div class="gt3_woocommerce_open_control_tag"><a
+                          href="https://livewp.site/wp/md/browcraft/product/eyeshadow-primer/?add-to-cart=2719"
+                          data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                          data-product_id="2719" data-product_sku=""
+                          aria-label="Add “Nars Larger Than Life Lengthening Mascara in Black” to your cart"
+                          rel="nofollow">Add to cart</a></div>
+                    </li>
+
+
+                  </ul>
+
+                </section>
               </div>
+
+
+
             </div>
+            <div class="clear"></div>
           </div>
-          <div class="clear"></div>
         </div>
       </div>
     </div>
+    <div class="clear"></div>
+  </div>
+  </div>
+  </div>
   </div>
 
 
