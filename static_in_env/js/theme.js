@@ -879,46 +879,7 @@ function gt3_message_close(){
 	})
 }
 
-// Gt3 Testimonials
-function gt3_testimonials_list () {
-	if (jQuery('.module_testimonial.active-carousel').length) {
-		jQuery('.module_testimonial.active-carousel').each(function(){
-			var cur_slidesToShow = jQuery(this).attr('data-slides-per-line')*1;
-			var cur_sliderAutoplay = jQuery(this).attr('data-autoplay-time')*1;
-			var cur_fade = jQuery(this).attr('data-slider-fade') == 1;
-			jQuery(this).find('.testimonials_rotator').slick({
-				slidesToShow: cur_slidesToShow,
-				slidesToScroll: cur_slidesToShow,
-				autoplay: true,
-				autoplaySpeed: cur_sliderAutoplay,
-				speed: 500,
-				dots: true,
-				fade: cur_fade,
-				focusOnSelect: true,
-				arrows: false,
-				infinite: true,
-				asNavFor: jQuery(this).find('.testimonials-photo-wrapper'),
-				responsive: [
-				{
-				  breakpoint: 800,
-				  settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				  }
-				}
-				]
-			});
-			jQuery(this).find('.testimonials-photo-wrapper').slick({
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				asNavFor: jQuery(this).find('.testimonials_rotator'),
-				dots: false,
-				centerMode: true,
-				focusOnSelect: true
-			})
-		});
-	}
-}
+
 
 // Post Likes
 jQuery(document).on("click", ".post_likes_add", function(event) {

@@ -118,78 +118,8 @@
     <link rel="dns-prefetch" href="https://s.w.org/">
     <script type="text/javascript" id="www-widgetapi-script" src="{% static 'js/www-widgetapi.js' %}" async=""></script>
     <script src="{% static 'js/iframe_api' %}"></script>
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/livewp.site\/wp\/md\/browcraft\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.1"
-            }
-        };
-        ! function (e, a, t) {
-            var n, r, o, i = a.createElement("canvas"),
-                p = i.getContext && i.getContext("2d");
 
-            function s(e, t) {
-                var a = String.fromCharCode;
-                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
-                e = i.toDataURL();
-                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
-            }
-
-            function c(e) {
-                var t = a.createElement("script");
-                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
-            }
-            for (o = Array("flag", "emoji"), t.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
-                if (!p || !p.fillText) return !1;
-                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
-                    case "flag":
-                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([
-                            55356, 56826, 55356, 56819
-                        ], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418,
-                            56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447
-                        ], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203,
-                            56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447
-                        ]);
-                    case "emoji":
-                        return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212])
-                }
-                return !1
-            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t
-                .supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
-            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t
-                .readyCallback = function () {
-                    t.DOMReady = !0
-                }, t.supports.everything || (n = function () {
-                    t.readyCallback()
-                }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load",
-                    n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
-                    "complete" === a.readyState && t.readyCallback()
-                })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji),
-                    c(n.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
     <script src="{% static 'js/wp-emoji-release.min.js' %}" type="text/javascript" defer=""></script>
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
     <link rel="stylesheet" id="sb_instagram_styles-css" href="{% static 'css/sbi-styles.min.css' %}" type="text/css"
         media="all">
     <link rel="stylesheet" id="wp-block-library-css" href="{% static 'css/style.min.css' %}" type="text/css"
@@ -219,6 +149,7 @@
             visibility: visible;
         }
     </style>
+
     <link rel="stylesheet" id="gt3_default_style-css" href="{% static 'css/style(1).css' %}" type="text/css"
         media="all">
     <link rel="stylesheet" id="gt3_awesome-css" href="{% static 'css/font-awesome.min.css' %}" type="text/css"
@@ -237,8 +168,7 @@
         media="all">
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}" id="jquery-core-js"></script>
     <script type="text/javascript" src="{% static 'js/jquery-migrate.min.js' %}" id="jquery-migrate-js"></script>
-    <script type="text/javascript" id="jquery-js-after">
-        var gt3_ajaxurl = "https://livewp.site/wp/md/browcraft/wp-admin/admin-ajax.php";
+
     </script>
     <script type="text/javascript" src="{% static 'js/jquery.blockUI.min.js' %}" id="jquery-blockui-js"></script>
     <script type="text/javascript" id="wc-add-to-cart-js-extra">
@@ -274,20 +204,9 @@
     <script type="text/javascript" src="{% static 'js/frontend-functions.js' %}" id="booked-wc-fe-functions-js">
     </script>
     <link rel="https://api.w.org/" href="https://livewp.site/wp/md/browcraft/wp-json/">
-    <link rel="alternate" type="application/json" href="https://livewp.site/wp/md/browcraft/wp-json/wp/v2/pages/1137">
+
     <link rel="canonical" href="https://livewp.site/wp/md/browcraft/">
-    <link rel="alternate" type="application/json+oembed"
-        href="https://livewp.site/wp/md/browcraft/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flivewp.site%2Fwp%2Fmd%2Fbrowcraft%2F">
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://livewp.site/wp/md/browcraft/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flivewp.site%2Fwp%2Fmd%2Fbrowcraft%2F&amp;format=xml">
-    <noscript>
-        <style>
-            .woocommerce-product-gallery {
-                opacity: 1 !important;
-            }
-        </style>
-    </noscript>
-    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+
     <style type="text/css" data-type="vc_shortcodes-custom-css">
         .vc_custom_1523541569015 {
             background-image: url(https://livewp.site/wp/md/browcraft/wp-content/uploads/sites/7/2018/03/home_01.jpg?id=2344) !important;
@@ -445,11 +364,11 @@
             }
         </style>
     </noscript>
-    <style type="text/css"></style>
+
 </head>
 
-<body
-    class="home page-template-default page page-id-1137 theme-browcraft woocommerce-js gt3_has_aside_menu wpb-js-composer js-comp-ver-6.5.0 vc_responsive">
+<body class="home page-template-default page page-id-1137 theme-browcraft woocommerce-js gt3_has_aside_menu
+    wpb-js-composer js-comp-ver-6.5.0 vc_responsive">
     <header class="main_header aside_header">
         <a href="javascript:void(0)" class="btn_menu">
             <div class="btn_menu_ico">
@@ -1577,286 +1496,278 @@
                                                         data-slides-per-line="3" data-slider-fade=""
                                                         data-autoplay-time="4000">
                                                         <div class="module_content testimonials_list items3">
-
                                                             <div class="testimonials_rotator slick-initialized slick-slider"
                                                                 role="toolbar">
                                                                 <div aria-live="polite" class="slick-list draggable">
-                                                                    <div class="slick-track" role="listbox"
-                                                                        style="opacity: 1; width: 4800px; left: -2400px;">
-                                                                        {% for item in object_list %}
-                                                                        <div class="testimonials_item slick-slide slick-cloned"
-                                                                            data-slick-index="-3" id=""
-                                                                            aria-hidden="true" style="width: 370px;"
-                                                                            tabindex="-1">
-                                                                            <div class="testimonial_item_wrapper">
-                                                                                <div class="testimonials_content">
-                                                                                    <div class="testimonials_photo"><img
-                                                                                            src="{{ item.image.url }}"
-                                                                                            class="testimonials_round_img"
-                                                                                            alt="testimonials_photo"
-                                                                                            style="width:70px; height:70px;">
-                                                                                    </div>
-                                                                                    <div class="testimonials_title">
-                                                                                        {{ item.name }}
-                                                                                        <div
-                                                                                            class="testimonials_author_position">
-                                                                                            {{ item.position }}</div>
-                                                                                    </div>
-                                                                                    <div class="testimonials-text"
-                                                                                        style=" font-size: 16px; line-height: 24px;">
-                                                                                        <p style="text-align: left">
-                                                                                            {{ item.comment }}
-                                                                                        </p>
-                                                                                    </div>
+                                                                    {% for item in object_list %}
+                                                                    <div class="testimonials_item slick-slide"
+                                                                        aria-hidden="true" style="width: 370px;"
+                                                                        tabindex="-1">
+                                                                        <div class="testimonial_item_wrapper">
+                                                                            <div class="testimonials_content">
+                                                                                <div
+                                                                                    class="testimonials_photo slider__item">
+                                                                                    <img src="{{ item.image.url }}"
+                                                                                        class="testimonials_round_img"
+                                                                                        alt="testimonials_photo"
+                                                                                        style="width:70px; height:70px;">
+                                                                                </div>
+                                                                                <div class="testimonials_title">
+                                                                                    {{ item.name }}
+                                                                                    <div
+                                                                                        class="testimonials_author_position">
+                                                                                        {{ item.position }}</div>
+                                                                                </div>
+                                                                                <div class="testimonials-text"
+                                                                                    style=" font-size: 16px; line-height: 24px;">
+                                                                                    <p style="text-align: left">
+                                                                                        {{ item.comment }}
+                                                                                    </p>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>{% endfor %}
+                                                                    </div>
+                                                                    {% endfor %}
                                                                 </div>
-
-
-                                                                <ul class="slick-dots " role="tablist">
-                                                                    <li class="" aria-hidden="true" role="presentation"
-                                                                        aria-selected="true"
-                                                                        aria-controls="navigation00" id="slick-slide00">
-                                                                        <button type="button" data-role="none"
-                                                                            role="button" aria-required="false"
-                                                                            tabindex="0">1</button>
-                                                                    </li>
-                                                                    <li aria-hidden="false" role="presentation"
-                                                                        aria-selected="false"
-                                                                        aria-controls="navigation01" id="slick-slide01"
-                                                                        class="slick-active"><button type="button"
-                                                                            data-role="none" role="button"
-                                                                            aria-required="false"
-                                                                            tabindex="0">2</button>
-                                                                    </li>
-                                                                </ul>
                                                             </div>
-
-                                                            <div class="clear"></div>
+                                                            <ul class="slick-dots " role="tablist">
+                                                                <li class="" aria-hidden="true" role="presentation"
+                                                                    aria-selected="true" aria-controls="navigation00"
+                                                                    id="slick-slide00">
+                                                                    <button type="button" data-role="none" role="button"
+                                                                        aria-required="false" tabindex="0">1</button>
+                                                                </li>
+                                                                <li aria-hidden="false" role="presentation"
+                                                                    aria-selected="false" aria-controls="navigation01"
+                                                                    id="slick-slide01" class="slick-active"><button
+                                                                        type="button" data-role="none" role="button"
+                                                                        aria-required="false" tabindex="0">2</button>
+                                                                </li>
+                                                            </ul>
                                                         </div>
 
+                                                        <div class="clear"></div>
                                                     </div>
+
                                                 </div>
-                                                <div class="gt3_spacing">
-                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                        style="height:105px;"></div>
-                                                </div>
+                                            </div>
+                                            <div class="gt3_spacing">
+                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                    style="height:105px;"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div data-vc-full-width="true" data-vc-full-width-init="true"
-                                    class="vc_row wpb_row vc_row-fluid vc_custom_1522242479217 vc_row-has-fill"
-                                    style="position: relative; left: -70px; box-sizing: border-box; width: 1340px; padding-left: 70px; padding-right: 70px;">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="vc_column-inner">
-                                            <div class="wpb_wrapper">
-                                                <div class="gt3_spacing">
-                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                        style="height:68px;"></div>
-                                                </div>
-                                                <h6 style="color: #fb90b1;text-align: center"
-                                                    class="vc_custom_heading wpb_animate_when_almost_visible wpb_slideInUp slideInUp">
-                                                    YOUR BEST SOLUTION</h6>
-                                                <h2 style="color: #202020;line-height: 36px;text-align: center"
-                                                    class="vc_custom_heading wpb_animate_when_almost_visible wpb_slideInUp slideInUp">
-                                                    Most Popular Services</h2>
-                                                <div class="gt3_spacing">
-                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                        style="height:14px;"></div>
-                                                </div>
-
-                                                <div
-                                                    class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1522219776656">
-
-                                                    <figure class="wpb_wrapper vc_figure">
-                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img
-                                                                width="72" height="6"
-                                                                src="{% static 'image/divider.png' %}"
-                                                                class="vc_single_image-img attachment-full" alt=""
-                                                                loading="lazy"></div>
-                                                    </figure>
-                                                </div>
-                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                                                    <div
-                                                        class="wpb_column vc_column_container vc_col-sm-10 vc_col-sm-offset-1">
-                                                        <div class="vc_column-inner">
-                                                            <div class="wpb_wrapper">
-                                                                <div style="font-size: 16px;color: #747a8c;line-height: 30px;text-align: center"
-                                                                    class="vc_custom_heading wpb_animate_when_almost_visible wpb_slideInUp slideInUp">
-                                                                    Microblading is a semi-permanent eyebrow procedure
-                                                                    that yields natural, crisp strokes that resemble
-                                                                    hair. It is done by hand, using a very fine blade to
-                                                                    deposit a small amount of ink into the skin. What
-                                                                    our clients say about this procedure</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="gt3_spacing gt3_spacing-height_mobile-on">
-                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                        style="height:76px;"></div>
-                                                    <div class="gt3_spacing-height gt3_spacing-height_mobile"
-                                                        style="height:40px;"></div>
-                                                </div>
-                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                                                    <div
-                                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 vc_col-xs-12">
-                                                        <div class="vc_column-inner">
-                                                            <div class="wpb_wrapper">
-                                                                <div class="price_item standard ">
-                                                                    <div class="price_item_wrapper">
-                                                                        <div class="item_cost_wrapper  with-image ">
-                                                                            <div class="package_head package_has_icon">
-                                                                                <div class="package_icon"><img
-                                                                                        src="{% static 'image/icon_141.png' %}"
-                                                                                        alt="package_icon"></div>
-                                                                                <div class="item_cost_wrapper">
-                                                                                    <div class="price_item_title">
-                                                                                        <h6>180 minutes</h6>
-                                                                                    </div>
-                                                                                    <div class="price_content"><span
-                                                                                            class="price_item_prefix">$</span><span
-                                                                                            class="price_value">300</span>
-                                                                                    </div>
-                                                                                    <div class="price_item_description">
-                                                                                        3D Microblading Eyebrows Manual
-                                                                                        Hair Technique</div>
-                                                                                </div>
-                                                                                <div class="price_item_body">
-                                                                                    <div class="items_text">
-                                                                                    </div>
-                                                                                    <div class="price_button"><a
-                                                                                            class="shortcode_button"
-                                                                                            href="javascript:void(0)"><span>learn
-                                                                                                more</span></a></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="gt3_spacing gt3_spacing-height_mobile-on">
-                                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                                        style="height:30px;"></div>
-                                                                    <div class="gt3_spacing-height gt3_spacing-height_mobile"
-                                                                        style="height:55px;"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 vc_col-xs-12">
-                                                        <div class="vc_column-inner">
-                                                            <div class="wpb_wrapper">
-                                                                <div class="price_item most_popular  ">
-                                                                    <div class="price_item_wrapper">
-                                                                        <div class="item_cost_wrapper  with-image ">
-                                                                            <div class="package_head package_has_icon">
-                                                                                <div class="package_icon"><img
-                                                                                        src="{% static 'image/icon_13.png' %}"
-                                                                                        alt="package_icon"></div>
-                                                                                <div class="item_cost_wrapper">
-                                                                                    <div class="price_item_title">
-                                                                                        <h6>200 minutes</h6>
-                                                                                    </div>
-                                                                                    <div class="price_content"><span
-                                                                                            class="price_item_prefix">$</span><span
-                                                                                            class="price_value">350</span>
-                                                                                    </div>
-                                                                                    <div class="price_item_description">
-                                                                                        3D Microblading Eyebrows Manual
-                                                                                        Hair Technique</div>
-                                                                                </div>
-                                                                                <div class="price_item_body">
-                                                                                    <div class="items_text">
-                                                                                    </div>
-                                                                                    <div class="price_button"><a
-                                                                                            class="shortcode_button"
-                                                                                            href="javascript:void(0)"><span>learn
-                                                                                                more</span></a></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="gt3_spacing">
-                                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                                        style="height:30px;"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 vc_col-xs-12">
-                                                        <div class="vc_column-inner">
-                                                            <div class="wpb_wrapper">
-                                                                <div class="price_item standard ">
-                                                                    <div class="price_item_wrapper">
-                                                                        <div class="item_cost_wrapper  with-image ">
-                                                                            <div class="package_head package_has_icon">
-                                                                                <div class="package_icon"><img
-                                                                                        src="{% static 'image/icon_12.png' %}"
-                                                                                        alt="package_icon"></div>
-                                                                                <div class="item_cost_wrapper">
-                                                                                    <div class="price_item_title">
-                                                                                        <h6>320 minutes</h6>
-                                                                                    </div>
-                                                                                    <div class="price_content"><span
-                                                                                            class="price_item_prefix">$</span><span
-                                                                                            class="price_value">400</span>
-                                                                                    </div>
-                                                                                    <div class="price_item_description">
-                                                                                        3D Microblading Eyebrows Manual
-                                                                                        Hair Technique</div>
-                                                                                </div>
-                                                                                <div class="price_item_body">
-                                                                                    <div class="items_text">
-                                                                                    </div>
-                                                                                    <div class="price_button"><a
-                                                                                            class="shortcode_button"
-                                                                                            href="javascript:void(0)"><span>learn
-                                                                                                more</span></a></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="gt3_spacing">
-                                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                                        style="height:30px;"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="gt3_spacing">
-                                                    <div class="gt3_spacing-height gt3_spacing-height_default"
-                                                        style="height:50px;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vc_row-full-width vc_clearfix"></div>
-
-                                <div class="vc_row-full-width vc_clearfix"></div>
-                                <div class="clea_r"></div>
-
-
-
-                                <div class="clea_r"></div>
                             </div>
+                            <div data-vc-full-width="true" data-vc-full-width-init="true"
+                                class="vc_row wpb_row vc_row-fluid vc_custom_1522242479217 vc_row-has-fill"
+                                style="position: relative; left: -70px; box-sizing: border-box; width: 1340px; padding-left: 70px; padding-right: 70px;">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            <div class="gt3_spacing">
+                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                    style="height:68px;"></div>
+                                            </div>
+                                            <h6 style="color: #fb90b1;text-align: center"
+                                                class="vc_custom_heading wpb_animate_when_almost_visible wpb_slideInUp slideInUp">
+                                                YOUR BEST SOLUTION</h6>
+                                            <h2 style="color: #202020;line-height: 36px;text-align: center"
+                                                class="vc_custom_heading wpb_animate_when_almost_visible wpb_slideInUp slideInUp">
+                                                Most Popular Services</h2>
+                                            <div class="gt3_spacing">
+                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                    style="height:14px;"></div>
+                                            </div>
+
+                                            <div
+                                                class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1522219776656">
+
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                            width="72" height="6" src="{% static 'image/divider.png' %}"
+                                                            class="vc_single_image-img attachment-full" alt=""
+                                                            loading="lazy"></div>
+                                                </figure>
+                                            </div>
+                                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                <div
+                                                    class="wpb_column vc_column_container vc_col-sm-10 vc_col-sm-offset-1">
+                                                    <div class="vc_column-inner">
+                                                        <div class="wpb_wrapper">
+                                                            <div style="font-size: 16px;color: #747a8c;line-height: 30px;text-align: center"
+                                                                class="vc_custom_heading wpb_animate_when_almost_visible wpb_slideInUp slideInUp">
+                                                                Microblading is a semi-permanent eyebrow procedure
+                                                                that yields natural, crisp strokes that resemble
+                                                                hair. It is done by hand, using a very fine blade to
+                                                                deposit a small amount of ink into the skin. What
+                                                                our clients say about this procedure</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gt3_spacing gt3_spacing-height_mobile-on">
+                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                    style="height:76px;"></div>
+                                                <div class="gt3_spacing-height gt3_spacing-height_mobile"
+                                                    style="height:40px;"></div>
+                                            </div>
+                                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                <div
+                                                    class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 vc_col-xs-12">
+                                                    <div class="vc_column-inner">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="price_item standard ">
+                                                                <div class="price_item_wrapper">
+                                                                    <div class="item_cost_wrapper  with-image ">
+                                                                        <div class="package_head package_has_icon">
+                                                                            <div class="package_icon"><img
+                                                                                    src="{% static 'image/icon_141.png' %}"
+                                                                                    alt="package_icon"></div>
+                                                                            <div class="item_cost_wrapper">
+                                                                                <div class="price_item_title">
+                                                                                    <h6>180 minutes</h6>
+                                                                                </div>
+                                                                                <div class="price_content"><span
+                                                                                        class="price_item_prefix">$</span><span
+                                                                                        class="price_value">300</span>
+                                                                                </div>
+                                                                                <div class="price_item_description">
+                                                                                    3D Microblading Eyebrows Manual
+                                                                                    Hair Technique</div>
+                                                                            </div>
+                                                                            <div class="price_item_body">
+                                                                                <div class="items_text">
+                                                                                </div>
+                                                                                <div class="price_button"><a
+                                                                                        class="shortcode_button"
+                                                                                        href="javascript:void(0)"><span>learn
+                                                                                            more</span></a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="gt3_spacing gt3_spacing-height_mobile-on">
+                                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                                    style="height:30px;"></div>
+                                                                <div class="gt3_spacing-height gt3_spacing-height_mobile"
+                                                                    style="height:55px;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 vc_col-xs-12">
+                                                    <div class="vc_column-inner">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="price_item most_popular  ">
+                                                                <div class="price_item_wrapper">
+                                                                    <div class="item_cost_wrapper  with-image ">
+                                                                        <div class="package_head package_has_icon">
+                                                                            <div class="package_icon"><img
+                                                                                    src="{% static 'image/icon_13.png' %}"
+                                                                                    alt="package_icon"></div>
+                                                                            <div class="item_cost_wrapper">
+                                                                                <div class="price_item_title">
+                                                                                    <h6>200 minutes</h6>
+                                                                                </div>
+                                                                                <div class="price_content"><span
+                                                                                        class="price_item_prefix">$</span><span
+                                                                                        class="price_value">350</span>
+                                                                                </div>
+                                                                                <div class="price_item_description">
+                                                                                    3D Microblading Eyebrows Manual
+                                                                                    Hair Technique</div>
+                                                                            </div>
+                                                                            <div class="price_item_body">
+                                                                                <div class="items_text">
+                                                                                </div>
+                                                                                <div class="price_button"><a
+                                                                                        class="shortcode_button"
+                                                                                        href="javascript:void(0)"><span>learn
+                                                                                            more</span></a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="gt3_spacing">
+                                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                                    style="height:30px;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 vc_col-xs-12">
+                                                    <div class="vc_column-inner">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="price_item standard ">
+                                                                <div class="price_item_wrapper">
+                                                                    <div class="item_cost_wrapper  with-image ">
+                                                                        <div class="package_head package_has_icon">
+                                                                            <div class="package_icon"><img
+                                                                                    src="{% static 'image/icon_12.png' %}"
+                                                                                    alt="package_icon"></div>
+                                                                            <div class="item_cost_wrapper">
+                                                                                <div class="price_item_title">
+                                                                                    <h6>320 minutes</h6>
+                                                                                </div>
+                                                                                <div class="price_content"><span
+                                                                                        class="price_item_prefix">$</span><span
+                                                                                        class="price_value">400</span>
+                                                                                </div>
+                                                                                <div class="price_item_description">
+                                                                                    3D Microblading Eyebrows Manual
+                                                                                    Hair Technique</div>
+                                                                            </div>
+                                                                            <div class="price_item_body">
+                                                                                <div class="items_text">
+                                                                                </div>
+                                                                                <div class="price_button"><a
+                                                                                        class="shortcode_button"
+                                                                                        href="javascript:void(0)"><span>learn
+                                                                                            more</span></a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="gt3_spacing">
+                                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                                    style="height:30px;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gt3_spacing">
+                                                <div class="gt3_spacing-height gt3_spacing-height_default"
+                                                    style="height:50px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row-full-width vc_clearfix"></div>
+
+                            <div class="vc_row-full-width vc_clearfix"></div>
+                            <div class="clea_r"></div>
+
+
+
+                            <div class="clea_r"></div>
                         </div>
                     </div>
-                    <div class="clear"></div>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
+    </div>
     </div>
     <div class="prefooter_shortcode_area pl_100"></div>
     <div class="footer_widgets fadeOnLoad" style="opacity: 1;">
