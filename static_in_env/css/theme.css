@@ -8245,9 +8245,10 @@ body.wpb-js-composer .vc_general.vc_cta3.vc_cta3-actions-right .vc_cta3-content 
 }
 
 .module_testimonial.type1 .testimonials_photo {
-	display: inline-block !important;
+	display: inline-block;
 	margin-bottom: 20px;
 	margin-right: 20px;
+	float: left;
 }
 
 .module_testimonial.type1 .testimonials_photo img {
@@ -8271,6 +8272,7 @@ body.wpb-js-composer .vc_general.vc_cta3.vc_cta3-actions-right .vc_cta3-content 
 
 .module_testimonial .testimonials_content .testimonials_title {
 	display: inline-block;
+	float: left;
 }
 
 .module_testimonial .testimonials_content .testimonials-text p {

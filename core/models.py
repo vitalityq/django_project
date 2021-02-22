@@ -69,3 +69,11 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Specialist(models.Model):
+    image = models.ImageField()
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name

@@ -1,16 +1,21 @@
 from django.shortcuts import render
-from .models import Item, Testimonial
+from .models import Item, Testimonial, Specialist
 from django.views.generic import ListView, DetailView, View
 
 
-class HomeView(ListView):
-    model = Testimonial
-    template_name = "home.html"
+def home(request):
+    testimonials = Testimonial.objects.all()
+
+    content = {"testimonials": testimonials}
+    return render(request, "home.html", content)
 
 
-def about_us(request):
-    context = {}
-    return render(request, "about_us.html", context)
+def about(request):
+    testimonials = Testimonial.objects.all()
+    specialists = Specialist.objects.all()
+
+    content = {"testimonials": testimonials, "specialists": specialists}
+    return render(request, "about_us.html", content)
 
 
 def appointment(request):
